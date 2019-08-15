@@ -5,4 +5,5 @@ squid:
   volumes:
     - ./.cache:/var/spool/squid
     - ./.logs:/var/log/squid
-    - ./squid.conf:/etc/squid/squid.conf
+    - ./conf/squid.conf:/etc/squid/squid.conf
+    - ./conf/passwd:/etc/squid/passwd
