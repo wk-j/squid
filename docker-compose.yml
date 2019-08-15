@@ -3,4 +3,6 @@ squid:
   ports:
     - "3128:3128"
   volumes:
-    - ./cache:/var/spool/squid
+    - ./.cache:/var/spool/squid
+    - ./.logs:/var/log/squid
+    - ./squid.conf:/etc/squid/squid.conf
